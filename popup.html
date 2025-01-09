@@ -1,0 +1,70 @@
+<html>
+  <style>
+.highLighterBox{
+  height: 200px;
+  width: 350px;
+  border-top: 5px solid lightcoral;
+  border-bottom:5px solid rgb(243, 243, 170) ;
+  border-left: 5px solid lightgreen ;
+  border-right: 5px solid lightblue;
+  padding: 5px;
+}
+#yellow{
+  height:24px;
+  width: 24px;
+   background-color:rgb(243, 243, 170) ;
+   outline: none;
+   border: none;
+
+}
+#green{
+  height:24px;
+  width: 24px;
+   background-color:lightgreen ;
+   outline: none;
+   border: none;
+}
+
+#red{
+  height:24px;
+  width: 24px;
+   background-color:lightcoral;
+   outline: none;
+   border: none;
+}
+.colors{
+    display: grid;
+  grid-template-columns:45px 45px 45px ;
+
+}
+small{
+  text-align: end;
+}
+
+
+  </style>
+  <body>
+    <div class="highLighterBox">
+     <div><h2><b>Highlighter</b> </h2>
+    </div> 
+      <div id="highLighter">
+        <h3>Choose color:</h3>
+        <div class="colors">
+          <button onclick="highlighterColorHandler(event)" id="yellow"></button>
+            <button onclick="highlighterColorHandler(event)" id="green"></button>
+            <button onclick="highlighterColorHandler(event)" id="red"></button>     
+      
+        </div>
+        
+      </div>
+      <br>
+      <div>
+        <h2><small>Keyboard Shortcut:ctrl+shift+h</small></h2>
+        
+      </div>
+      
+    </div>
+   
+    <script src="popup.js"></script>
+  </body>
+</html>
