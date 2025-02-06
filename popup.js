@@ -10,7 +10,11 @@ highLighter.addEventListener('change', function () {
         highLighter.style.backgroundColor = 'lightcoral';
       }
     });
-    
+    const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+ 
+})
 
 
 function highlighterColorHandler(event){
